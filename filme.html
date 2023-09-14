@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meus Filmes Favoritos</title>
+</head>
+<body>
+    <h1>Meus Filmes Favoritos</h1>
+    <ul>
+        {% for filme in filmes %}
+            <li>{{ filme.titulo }} ({{ filme.ano }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
